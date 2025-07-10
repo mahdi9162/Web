@@ -1,0 +1,85 @@
+/* Raleway Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+}
+
+/* CSS Variables */
+:root {
+    --body-color: #F5F8FF;
+    --bg-color1: rgba(78, 71, 255, 0.1);
+    --bg-color2: #FFFFFF;
+    --brand-color: rgba(78, 71, 255, 1);
+    --text-color1: rgba(0, 0, 0, 0.5);
+}
+
+/* Start Repeated Styles */
+.btn {
+      padding: 12px 26px;
+      color: whitesmoke;
+      background-color: var(--brand-color);
+      border-radius: 10px;
+      font-weight: bold;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 6px rgba(0, 86, 179, 0.5);
+      transition: all 0.5 ease;
+}
+
+.btn:hover {
+    background-color: var(--bg-color2);
+    color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-gap {
+    margin: 7.2rem 0;
+}
+
+
+/* End Repeated Styles */
+
+/* Navbar */
+header {
+    background-image: url('./images/Hero-bg.png');
+}
+
+.nav-logo {
+    padding: 3.1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo h4 {
+    color: var(--brand-color);
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.nav-logo h4 span {
+    color: black;
+}
+
+.hero-sec-text {
+    padding: 9.5rem;
+    text-align: center;
+}
+
+.hero-sec-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 2.2rem;
+}
+
+/* Action */
