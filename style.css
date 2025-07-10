@@ -1,5 +1,5 @@
 /* Raleway Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: var(--body-color);
@@ -19,8 +19,8 @@ body {
     --body-color: #F5F8FF;
     --bg-color1: rgba(78, 71, 255, 0.1);
     --bg-color2: #FFFFFF;
-    --brand-color: rgba(78, 71, 255, 1);
-    --text-color1: rgba(0, 0, 0, 0.5);
+    --brand-color: #4E47FF;
+    --text-color1: rgba(0, 0, 0, 0.5); 
 }
 
 /* Start Repeated Styles */
@@ -114,5 +114,39 @@ header {
     transform: scale(1.1);
 }
 
+/* Users Section */
+.users-sec {
+    text-align: center;
+    background-color: var(--bg-color1);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.users-sec h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+
+.users {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 3.1rem;
+}
 
 
+
+.users-info p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--brand-color);
+    font-family: "Inter", sans-serif;
+}
+
+.users-info span {
+    font-size: 1rem;
+    color: var(--text-color1);
+}
+
+/*  */
