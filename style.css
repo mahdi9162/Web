@@ -1,6 +1,10 @@
 /* Raleway Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    background-color: var(--body-color);
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -28,7 +32,7 @@
       font-weight: bold;
       border: 1px solid transparent;
       box-shadow: 0 4px 6px rgba(0, 86, 179, 0.5);
-      transition: all 0.5 ease;
+      transition: all .35s ease;
 }
 
 .btn:hover {
@@ -46,8 +50,8 @@
     margin: 7.2rem 0;
 }
 
-
 /* End Repeated Styles */
+
 
 /* Navbar */
 header {
@@ -82,4 +86,33 @@ header {
     padding-bottom: 2.2rem;
 }
 
-/* Action */
+/* Action Section */
+.action-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-sec h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.action-sec p {
+    font-size: 1.5rem;
+    color: var(--text-color1);
+    padding: 1.5rem 0;
+}
+
+.action-img img {
+    border-radius: 3rem;
+    box-shadow: 0 15px 35px rgba(25, 50, 100, 0.25);
+    transition: all .35s ease;
+}
+
+.action-img img:hover {
+    transform: scale(1.1);
+}
+
+
+
