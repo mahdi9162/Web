@@ -1,6 +1,10 @@
 /* Raleway Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--body-color);
 }
@@ -290,4 +294,49 @@ textarea::placeholder {
     display: block;
 }
 
+/* Footer Section */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 104px 0;
+    background-color: var(--bg-color2);
+}
 
+.footer-text h4 {
+    font-size: 100px;
+    color: var(--brand-color);
+}
+
+.footer-text span {
+    color: black;
+}
+
+.footer-text p {
+    font-size: 18px;
+    color: var(--text-color1);
+    padding-bottom: 20px;
+}
+
+#footer-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+#footer-menu a {
+    color: var(--text-color1);
+    font-size: 18px;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .35s ease;
+}
+
+#footer-menu a:hover {
+    background-color: var(--bg-color2);
+    border: 1px solid var(--brand-color);
+    scale: 1.1;
+    color: var(--brand-color);
+}
