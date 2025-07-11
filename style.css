@@ -247,4 +247,47 @@ header {
     transform: translateY(3px) scale(1.1);
 }
 
-/*  */
+/* Form Section */
+.form-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-text h1 {
+    font-size: 97px;
+    font-weight: bold;
+}
+
+.form-grp input {
+    display: block;
+    width: 80%;
+    border: none;
+    margin: 0.5rem 0 1.5rem;
+    border-radius: 14px;
+    padding: 20px 32px;
+    border: 1px solid var(--bg-color1);
+}
+
+.form-grp label {
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+textarea::placeholder {
+    padding: 20px 0 0 32px;
+}
+
+.form-grp textarea {
+    border: 1px solid var(--bg-color1);
+    border-radius: 14px;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.form-btn {
+    width: 100% ;
+    display: block;
+}
+
+
