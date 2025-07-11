@@ -27,6 +27,25 @@ body {
     --text-color1: rgba(117, 117, 117, 1); 
 }
 
+/* Animations */
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.animation {
+    animation: appear linear;
+    animation-range: entry 0% cover 40%;
+    animation-timeline: view();
+}
+
+
 /* Start Repeated Styles */
 .btn {
       padding: 12px 26px;
@@ -60,7 +79,7 @@ body {
 
 /* Navbar */
 header {
-    background-image: url('./images/Hero-bg.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./images/Hero-bg.png') ;
 }
 
 .nav-logo {
@@ -113,6 +132,7 @@ header {
     border-radius: 3rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15)0 8px 24px rgba(0, 0, 0, 0.15);
     transition: all .35s ease;
+    cursor: pointer;
 }
 
 .action-img img:hover {
@@ -179,6 +199,12 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.review-card i {
+    font-size: 18px;
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
 .review-card h5 {
     font-size: 20px;
     font-weight: bold;
@@ -210,7 +236,6 @@ header {
 }
 
 .info strong {
-   color: var(--text-color1);
    letter-spacing: 2px;
 }
 
@@ -235,20 +260,21 @@ header {
 }
 
 .focus-text p {
-    font-size: 14px;
+    font-size: 17zpx;
     color: var(--text-color1);
-    padding: 1.2rem 0;
+    padding: 0.5rem 0 2rem ;
 }
 
 .focus-img img {
     border-radius: 3rem;
-    margin-top: 1.3rem;
+    margin-top: 2rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     transition: all .35s ease;
+    cursor: pointer;
 }
 
 .focus-img img:hover {
-    transform: translateY(3px) scale(1.1);
+    transform: translateY(3px) scale(1.05);
 }
 
 /* Form Section */
@@ -257,7 +283,6 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .form-text h1 {
     font-size: 97px;
@@ -272,6 +297,7 @@ header {
     border-radius: 14px;
     padding: 20px 32px;
     border: 1px solid var(--bg-color1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .form-grp label {
@@ -287,6 +313,8 @@ textarea::placeholder {
     border: 1px solid var(--bg-color1);
     border-radius: 14px;
     margin: 0.5rem 0 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    resize: none;
 }
 
 .form-btn {
@@ -337,6 +365,7 @@ textarea::placeholder {
 #footer-menu a:hover {
     background-color: var(--bg-color2);
     border: 1px solid var(--brand-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     scale: 1.1;
     color: var(--brand-color);
 }
